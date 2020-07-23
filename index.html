@@ -1,0 +1,420 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Wikipedia Contribution Calculator</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/logo_test_2.png" type="image/png">
+        
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        #calculate_button{
+            color: white;
+        }
+        #calculate_button:hover{
+            color: black;
+        }
+    </style>
+    
+</head>
+
+<body>
+   
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== NAVBAR TWO PART START ======-->
+
+    <section class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+                       
+                        <a class="navbar-brand" href="#" style="text-align: center;">
+                            <img src="assets/images/logo_test.png" alt="Logo">
+                        </a>
+                        
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== NAVBAR TWO PART ENDS ======-->
+    
+    <!--====== SLIDER PART START ======-->
+
+    <section id="home" class="slider_area">
+        <div id="carouselThree" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselThree" data-slide-to="0" class="active"></li>
+            </ol>
+
+            <div class="carousel-inner" >
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">We all love Wikipedia</h1>
+                                    <p class="text">But did you know Wikipedia depends on donations from its readers to keep all the information available free of cost?</p>
+                                    <p class="text">Yes, that's right! So here's a tool you can use to calculate how much you should be contributing to Wikipedia for the free content that you consume!</p>
+                                    <!-- <p class="text"><span style="font-weight: bold;">Swipe left</span> to understand how our calculator works!</p> -->
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one page-scroll" href="#services">CALCULATE NOW</a></li>
+                                        <!-- <li><a class="main-btn rounded-two" href="#">DOWNLOAD</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end" style="margin-top: -10%;">
+                        <div class="slider-image">
+                            <img src="assets/images/slider/wiki_3.png" style="width: 80%; height: 80%;" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+            </div>
+
+        </div>
+    </section>
+
+    <!--====== SLIDER PART ENDS ======-->
+
+    
+    <!--====== FEATRES TWO PART START ======-->
+
+    <section id="services" class="features-area" style="background-color: white;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">Wikipedia Contribution Calculator <i class="lni lni-calculator"></i></h3>
+                        <p class="text">~ Complete the following fields in order to know how much you should be donating to Wikipedia for the free articles you read! ~</p>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-9">
+                    <div class="single-features mt-40 "  style="background-color: rgb(247, 247, 247);">
+                        <div class="features-title-icon d-flex justify-content-center">
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">1. Average number of Wikipedia articles you read <span>per day/week/month</span></h4>
+                        </div>
+                        <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
+                        <div class="row">
+                            <div class="col-6 mt-20 d-flex justify-content-center">
+                                <select id="duration" style="box-shadow: 2px 2px rgb(70, 68, 68);background-color: white;">
+                                    <option disabled selected hidden>Duration</option>
+                                    <option value="1">Daily</option>
+                                    <option value="2">Weekly</option>
+                                    <option value="3">Monthly</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <div class="mt-20">
+                                    <input id="articles_read" type="number"  min="0" onkeypress="return event.charCode >= 48 && event.charCode <= 57" step="1" style="text-align: center; box-shadow: 2px 2px rgb(70, 68, 68);width: 40%;"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-9">
+                    <div class="single-features mt-40"  style="background-color: rgb(223, 223, 223);">
+                        <div class="features-title-icon d-flex justify-content-center">
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">Total number of Wikipedia articles you read <span>per year</span></h4>
+                        </div>
+                        <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
+                        <div class="mt-20 d-flex justify-content-center">
+                            <input  type="text" id="articles_peryear" style="text-align: center; box-shadow: 2px 2px rgb(70, 68, 68); width: 30%;" disabled/>
+                        </div>
+                        
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-9">
+                    <div class="single-features mt-40"  style="background-color: rgb(247, 247, 247);">
+                        <div class="features-title-icon d-flex justify-content-center">
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">2. Monetory contribution you feel should be made <span>per article read</span></h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 mt-20 d-flex justify-content-center">
+                                <select id="currency" style="box-shadow: 2px 2px rgb(70, 68, 68); background-color: white;" onchange="ChangeValueList()">
+                                    <option disabled selected hidden>Currency</option>
+                                    <option value="1">INR</option>
+                                    <option value="2">USD</option>
+                                    <option value="3">EUR</option>
+                                    <option value="4">GBP</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <div class="mt-20">
+                                    <select id="contribution_perarticle" style="box-shadow: 2px 2px rgb(70, 68, 68);width: 40%;background-color: white;"></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-9">
+                    <div class="single-features mt-40" style="background-color: rgb(223, 223, 223);">
+                        <div class="features-title-icon d-flex justify-content-center">
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">Total contribution for the articles you read <span>per year</span></h4>
+                        </div>
+                        <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
+                        <div class="mt-20 d-flex justify-content-center">
+                            <p id="currency_label" style="display:none;padding-right: 2%;font-weight: 600;"></p>
+                            <input id="contribution_peryear" type="text" style="text-align: center; box-shadow: 2px 2px rgb(70, 68, 68);width: 30%;" disabled/>
+                        </div>
+                        
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-9">
+                    <div class="single-features mt-40" style="background-color: rgb(247, 247, 247);">
+                        <div class="features-title-icon d-flex justify-content-center">
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">3. Do you edit/contribute content to Wikipedia?</h4>
+                        </div>
+                        <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
+                        <div class="mt-20 d-flex justify-content-center">
+                            <select id="contribution_made" style="box-shadow: 2px 2px rgb(70, 68, 68);background-color: white;">
+                                <option disabled selected hidden>Select Option</option>
+                                <option value="-1">YES, I DO &nbsp:D</option>
+                                <option value="1">NO, I DONT &nbsp:(</option>
+                            </select>
+                        </div>
+                        
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-9">
+                    <div class="single-features mt-40 " style="background-color: rgb(247, 247, 247);">
+                        <div class="features-title-icon d-flex justify-content-center">
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">4. Correction Factor (%)</h4>
+                        </div>
+                        <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
+                        <div class="mt-20 d-flex justify-content-center">
+                            <input id="correction_factor" type="number" min="0" max="100" step="5" style="text-align: center; box-shadow: 2px 2px rgb(70, 68, 68);"/>
+                        </div>
+                        
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-9 d-flex justify-content-center mt-40">
+                        <ul class="slider-btn rounded-buttons">
+                            <!-- <li><a class="main-btn rounded-one" href="#">CALCULATE</a></li> -->
+                            <li><a class="main-btn rounded-two" id="calculate_button">CALCULATE &nbsp;<i class="lni lni-diamond-alt"></i></a></li>
+                        </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-9">
+                    <div class="single-features mt-40" style="background-color: rgb(247, 247, 247);">
+                        <div class="features-title-icon d-flex justify-content-center">
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 600;">This is how much you should contribute to Wikipedia <span>per year</span></h4>
+                        </div>
+                        <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
+                        <div class="mt-20 d-flex justify-content-center">
+                            <p id="currency_label_2" style="display:none; padding-right: 3%;font-weight: 600;"></p>
+                            <input id="final_amount" type="number" style="text-align: center; box-shadow: 2px 2px rgb(70, 68, 68);width: 30%;" readonly/>
+                        </div>
+                        <div class="mt-20 d-flex justify-content-center">
+                            <ul class="slider-btn rounded-buttons">
+                                <li><a href="https://wikimediafoundation.org/support/" class="main-btn rounded-one" id="pay_button" target="_blank">DONATE NOW &nbsp;<i class="lni lni-heart-filled"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FEATRES TWO PART ENDS ======-->
+
+    
+    <footer style="text-align: center;">
+        <span style="font-size: 10px;"><a target="_blank" href="https://icons8.com/icons/set/charity">Charity icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></span>
+    </footer>
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->    
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+    
+    <!--====== Isotope js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var duration;
+            var articles_read;
+            var articles_peryear;
+            var contribution_perarticle;
+            var contribution_peryear;
+            var contribution_made;
+            var correction_factor;
+            var final_amount;
+
+            $('#duration').on('change', function(){
+                duration = $(this).val();
+                document.getElementById("final_amount").value = null;
+                document.getElementById('articles_peryear').value = null;
+                document.getElementById('articles_read').value = null;
+            });
+            
+            $('#articles_read').on("change", function(){
+                if(duration == null){
+                    alert('Select Duration First');
+                    document.getElementById('articles_read').value = 0;
+                }
+                articles_read = document.getElementById('articles_read').value;
+
+                if(duration == "1"){
+                    document.getElementById('articles_peryear').value = articles_read * 365;
+                }
+                else if(duration == "2"){
+                    document.getElementById('articles_peryear').value = articles_read * 52;
+                }
+                else if(duration == "3"){
+                    document.getElementById('articles_peryear').value = articles_read * 12;
+                }
+                
+                articles_peryear = document.getElementById('articles_peryear').value;
+
+                if(contribution_peryear != null){
+                    document.getElementById('contribution_peryear').value = articles_peryear * contribution_perarticle;
+                    contribution_peryear = document.getElementById('contribution_peryear').value;
+                }
+                document.getElementById("final_amount").value = null;
+            });
+
+            $('#contribution_perarticle').on("change", function(){
+                contribution_perarticle = document.getElementById('contribution_perarticle').value;
+                document.getElementById('contribution_peryear').value = articles_peryear * contribution_perarticle;
+                contribution_peryear = document.getElementById('contribution_peryear').value;
+                document.getElementById("final_amount").value = null;
+            });
+            
+            $("#contribution_made").on("change", function(){
+                contribution_made = $(this).val();
+                document.getElementById("final_amount").value = null;
+            });
+
+            $("#correction_factor").on("change", function(){
+                correction_factor = document.getElementById("correction_factor").value;
+                document.getElementById("final_amount").value = null;
+            });
+            
+            $("#calculate_button").click(function(){
+                
+                if(articles_read == null || articles_peryear == null || contribution_perarticle == null || contribution_peryear == null || 
+                contribution_made == null || correction_factor == null){
+                    alert("All the fields are compulsory!");
+                }
+                else{
+                    final_amount = contribution_peryear * 1 + ((contribution_peryear * correction_factor / 100) * contribution_made);
+                    document.getElementById("final_amount").value = final_amount.toFixed(2);
+                }
+            });
+        
+
+        });
+    </script>
+
+    <script>
+        var currencyAndValue = {};
+        currencyAndValue['1'] = [' ', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+        currencyAndValue['2'] = [' ', '0.01', '0.05', '0.10', '0.25', '0.50', '1.00', '2.00'];
+        currencyAndValue['3'] = [' ', '0.01', '0.05', '0.10', '0.20', '0.50', '1.00', '2.00'];
+        currencyAndValue['4'] = [' ', '0.01', '0.05', '0.10', '0.20', '0.50', '1.00', '2.00'];
+        
+        function ChangeValueList() {
+            var currencyList = document.getElementById("currency");
+            var valueList = document.getElementById("contribution_perarticle");
+            var selCur = currencyList.options[currencyList.selectedIndex].value;
+            document.getElementById('currency_label_2').style.display = "block";
+            document.getElementById('currency_label').style.display = "block";
+            document.getElementById('currency_label').innerHTML = currencyList.options[currencyList.selectedIndex].text;
+            document.getElementById('currency_label_2').innerHTML = currencyList.options[currencyList.selectedIndex].text;
+            while (valueList.options.length) {
+                valueList.remove(0);
+            }
+            var currency = currencyAndValue[selCur];
+            if (currency) {
+                var i;
+                for (i = 0; i < currency.length; i++) {
+                var curr = new Option(currency[i], currency[i]);
+                valueList.options.add(curr);
+                }
+            }
+        } 
+    </script>
+    
+</body>
+
+</html>
