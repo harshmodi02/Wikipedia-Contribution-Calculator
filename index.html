@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     
     <!--====== Title ======-->
-    <title>Wikipedia Contribution Calculator</title>
+    <title>Wikipedia Donation Calculator</title>
     
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -105,8 +105,8 @@
                             <div class="col-lg-6">
                                 <div class="slider-content">
                                     <h1 class="title">We all love Wikipedia</h1>
-                                    <p class="text">But did you know Wikipedia depends on donations from its readers to keep all the information available free of cost?</p>
-                                    <p class="text">Yes, that's right! So here's a tool you can use to calculate how much you should be contributing to Wikipedia for the free content that you consume!</p>
+                                    <p class="text">But did you know Wikipedia depends on <span style="text-decoration: underline; font-weight: 600;">voluntary</span> contributions for its operations. Yes, that's right! Wikipedia does not sell advertisements.</p>
+                                    <p class="text">So here's a tool to help you determine the fair contribution amount for the free content that you consume!</p>
                                     <!-- <p class="text"><span style="font-weight: bold;">Swipe left</span> to understand how our calculator works!</p> -->
                                     <ul class="slider-btn rounded-buttons">
                                         <li><a class="main-btn rounded-one page-scroll" href="#services">CALCULATE NOW</a></li>
@@ -138,7 +138,7 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-10">
                         <h3 class="title">Wikipedia Contribution Calculator <i class="lni lni-calculator"></i></h3>
-                        <p class="text">~ Complete the following fields in order to know how much you should be donating to Wikipedia for the free articles you read! ~</p>
+                        <p class="text">~ Complete the following fields as per your best estimates to arrive at a contribution amount as per your usage ~</p>
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
@@ -146,7 +146,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-9">
                     <div class="single-features mt-40 "  style="background-color: rgb(247, 247, 247);">
                         <div class="features-title-icon d-flex justify-content-center">
-                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">1. Average number of Wikipedia articles you read <span>per day/week/month</span></h4>
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">1. Average number of Wikipedia articles read <span>per day/week/month</span></h4>
                         </div>
                         <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
                         <div class="row">
@@ -171,7 +171,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-9">
                     <div class="single-features mt-40"  style="background-color: rgb(223, 223, 223);">
                         <div class="features-title-icon d-flex justify-content-center">
-                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">Total number of Wikipedia articles you read <span>per year</span></h4>
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">Total number of Wikipedia articles read by you <span>per year</span></h4>
                         </div>
                         <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
                         <div class="mt-20 d-flex justify-content-center">
@@ -183,7 +183,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-9">
                     <div class="single-features mt-40"  style="background-color: rgb(247, 247, 247);">
                         <div class="features-title-icon d-flex justify-content-center">
-                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">2. Monetory contribution you feel should be made <span>per article read</span></h4>
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">2. Fair monetary contribution for each article</h4>
                         </div>
 
                         <div class="row">
@@ -207,7 +207,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-9">
                     <div class="single-features mt-40" style="background-color: rgb(223, 223, 223);">
                         <div class="features-title-icon d-flex justify-content-center">
-                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">Total contribution for the articles you read <span>per year</span></h4>
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">Total annual contribution</h4>
                         </div>
                         <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
                         <div class="mt-20 d-flex justify-content-center">
@@ -220,7 +220,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-9">
                     <div class="single-features mt-40" style="background-color: rgb(247, 247, 247);">
                         <div class="features-title-icon d-flex justify-content-center">
-                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">3. Do you edit/contribute content to Wikipedia?</h4>
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">3. Do you write, edit or contribute for articles on Wikipedia?</h4>
                         </div>
                         <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
                         <div class="mt-20 d-flex justify-content-center">
@@ -233,10 +233,10 @@
                         
                     </div> <!-- single features -->
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-9">
+                <div class="col-lg-6 col-md-6 col-sm-9" style="display: none;" id="discount_div">
                     <div class="single-features mt-40 " style="background-color: rgb(247, 247, 247);">
                         <div class="features-title-icon d-flex justify-content-center">
-                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">4. Correction Factor (%)</h4>
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 500;">4. Discount (%) <span style="font-size: 12px;">(select a fair discount as per your efforts in writing/editing articles)</span></h4>
                         </div>
                         <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
                         <div class="mt-20 d-flex justify-content-center">
@@ -245,7 +245,7 @@
                         
                     </div> <!-- single features -->
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-9 d-flex justify-content-center mt-40">
+                <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center mt-40">
                         <ul class="slider-btn rounded-buttons">
                             <!-- <li><a class="main-btn rounded-one" href="#">CALCULATE</a></li> -->
                             <li><a class="main-btn rounded-two" id="calculate_button">CALCULATE &nbsp;<i class="lni lni-diamond-alt"></i></a></li>
@@ -254,7 +254,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-9">
                     <div class="single-features mt-40" style="background-color: rgb(247, 247, 247);">
                         <div class="features-title-icon d-flex justify-content-center">
-                            <h4 class="features-title" title="" style="text-align: center;font-weight: 600;">This is how much you should contribute to Wikipedia <span>per year</span></h4>
+                            <h4 class="features-title" title="" style="text-align: center;font-weight: 600;">Estimated annual contribution amount</h4>
                         </div>
                         <!-- <div class="mt-10 d-flex justify-content-center"><i class="lni lni-arrow-down-circle"></i></div> -->
                         <div class="mt-20 d-flex justify-content-center">
@@ -368,6 +368,13 @@
             $("#contribution_made").on("change", function(){
                 contribution_made = $(this).val();
                 document.getElementById("final_amount").value = null;
+
+                if(contribution_made == "-1"){
+                    $('#discount_div').show();
+                }
+                if(contribution_made == "1"){
+                    $('#discount_div').hide();
+                }
             });
 
             $("#correction_factor").on("change", function(){
@@ -378,11 +385,17 @@
             $("#calculate_button").click(function(){
                 
                 if(articles_read == null || articles_peryear == null || contribution_perarticle == null || contribution_peryear == null || 
-                contribution_made == null || correction_factor == null){
+                contribution_made == null){
                     alert("All the fields are compulsory!");
                 }
                 else{
-                    final_amount = contribution_peryear * 1 + ((contribution_peryear * correction_factor / 100) * contribution_made);
+                    if(contribution_made == "1"){
+                        final_amount = contribution_peryear * 1 
+                    }
+                    else{
+                        final_amount = contribution_peryear * 1 + ((contribution_peryear * correction_factor / 100) * contribution_made);
+                    }
+                    
                     document.getElementById("final_amount").value = final_amount.toFixed(2);
                 }
             });
